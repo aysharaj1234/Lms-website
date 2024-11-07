@@ -1,10 +1,14 @@
 
 import React from 'react';
-
+import { Link, useNavigate } from 'react-router-dom';
 
 const MobileApp= () => {
 
-
+  const navigate= useNavigate()
+  const dashboard=()=>
+  {
+    navigate('/')
+  }
 
   
   return (
@@ -13,7 +17,7 @@ const MobileApp= () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ borderBottom: "1px solid lightgray" }}>
         <div className="container-fluid">
 
-          <i className="fa-solid fa-backward"></i>
+          <i className="fa-solid fa-backward" onClick={dashboard} style={{cursor:"pointer"}}></i>
 
           <a className="navbar-brand ms-2" href="#">Add-Ons</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
