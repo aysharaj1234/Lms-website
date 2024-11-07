@@ -1,0 +1,82 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  transition: width 0.3s ease;
+
+}
+
+.sidebar.collapsed {
+  width: 80px; 
+}
+
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.nav-item {
+  /* padding: 10px 15px; */
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.nav-link, .dropdown-item {
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .nav-item .nav-icon {
+    margin-right: 0;
+  }
+
+  .nav-item .nav-link {
+    padding-left: 10px;
+  }
+
+  
+  .nav-link span,
+  .nav-dropdown .dropdown-toggle {
+    display: none;
+  }
+
+  .nav-link .nav-icon {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 100%; 
+    height: auto;
+    position: relative; 
+  }
+
+  .nav-item {
+    padding: 10px 5px;
+  }
+}

@@ -1,0 +1,50 @@
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto;
+  position: fixed;
+  top: 55px;
+  left: 0;
+  background-color: #f8f9fa;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 80px; 
+}
+
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.toggle-btn {
+  cursor: pointer;
+  font-size: 20px;
+}
+.nav-dropdown-scrollable .dropdown-menu {
+  height: auto; /* Allow the height to grow based on content */
+  max-height: 300px; /* Set a maximum height to prevent it from growing too large */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
+
+.nav-icon {
+  margin-right: 10px;
+}
+
+.nav-link, .dropdown-item {
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+

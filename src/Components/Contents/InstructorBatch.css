@@ -1,0 +1,19 @@
+.card {
+    border: none;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+.card-img-top {
+    width: 150px;
+    margin: auto;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
