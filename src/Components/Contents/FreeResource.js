@@ -2,18 +2,18 @@ import React from 'react';
 import Sidebar from '../Sidebar';
 import Header from './Header';
 
-const DigitalProducts = () => {
+const FreeResource = () => {
   return (
     <div>
-    <Sidebar />
-    <Header />
-  {/* section-19 */}
+         <Sidebar />
+         <Header />
+          {/* section-19 */}
   <div className="section-19">
     <div className="container">
       <div className="row">
         <div className="col-lg-6 col-md-6 col-sm-12 mt-5">
-          <h3>Digital Products</h3>
-          <p>Welcome to your Digital product dashboard</p>
+          <h3>Free Resource</h3>
+          <p>Reach more potential Learners with free resource.</p>
           <div className="d-flex flex-column flex-md-row align-items-md-center">
             <input
               type="text"
@@ -105,8 +105,9 @@ Create
                   </div>
                <h5 className='text-center mt-5'> No result found</h5>
             </div>
-</div>
+
+    </div>
   )
 }
 
-export default DigitalProducts;
+export default FreeResource;

@@ -20,7 +20,7 @@ const SalesMarketing = () => {
                   <li className="breadcrumb-item">
                     <a href="#">Dashboard</a>
                   </li>
-                  <li className="breadcrumb-item active" aria-current="page">
+                  <li className="breadcrumb-item" aria-current="page">
                     Sales & Marketing
                   </li>
                 </ol>

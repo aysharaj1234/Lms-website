@@ -47,111 +47,201 @@ function Dashboard() {
             <div>
             <Sidebar />
             </div>
-            <div className="flex-grow-1" style={{ marginLeft: '250px',zIndex:"-99",marginTop:"3.5rem" }}> {/* Adjusted offset */}
-                <Container fluid className="p-4">
-                    <h4 className="mb-4">Welcome, Jai Rastogi</h4>
+            <div className="flex-grow-1" style={{ marginLeft: '250px',zIndex:"-99",marginTop:"3.5rem" }}></div>
+            <div className="container mt-5">
+              <h3 className='pt-5'>Welcome to Rastogi?</h3>
+              <div className="row pt-3">
+                <div className="col-12 col-lg-8 mb-3">
+                  <div className='d-flex border justify-content-around rounded'>
+                  <div className=" ">
+                  <p>Total Products</p>
+                  <h5>&#8377;  27,447</h5>
+                  </div>
 
-                    <Row>
-                        <Col lg={7}>
-                            <Card className="mb-3 p-3 shadow-sm">
-                                <Row>
-                                    <Col>
-                                        <div className="text-muted">Total Sales</div>
-                                        <h4>₹ 27,447</h4>
-                                    </Col>
-                                    <Col>
-                                        <div className="text-muted">Products</div>
-                                        <h4>1</h4>
-                                    </Col>
-                                    <Col>
-                                        <div className="text-muted">Learners</div>
-                                        <h4>14</h4>
-                                    </Col>
-                                </Row>
-                            </Card>
-                        </Col>
+                  <div className="">
+                  <p>Products</p>
+                  <h5>1</h5>
+                  </div>
 
-                        <Col lg={5}>
-                            <Card className="shadow-sm">
-                                <Card.Header className="bg-white">
-                                    <strong>Scheduled Events</strong>
-                                </Card.Header>
-                                <Card.Body className="d-flex align-items-center">
-                                    <div className="me-3">
-                                        <div className="bg-light rounded-circle text-center" style={{ width: '40px', height: '40px' }}>
-                                            <span style={{ lineHeight: '40px', color: '#4CAF50' }}>L</span>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <h6 className="mb-0">Live Lesson 1</h6>
-                                        <small>07-Oct-2024 • 8:00 PM</small>
-                                    </div>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
+                  <div className="">
+                  <p>Learners</p>
+                  <h5>14</h5>
+                  </div>
+                  </div>
 
-                    <Row className="mt-4">
-                        <Col md={7}>
-                            <Card className="p-3 mb-4">
-                                <h5>Sales (12 Months)</h5>
-                                <Row>
-                                    <Col>
-                                        <div>Total Sales</div>
-                                        <h4>₹ 27,447</h4>
-                                    </Col>
-                                    <Col>
-                                        <div>Online Sales</div>
-                                        <h4>₹ 12,447</h4>
-                                    </Col>
-                                    <Col>
-                                        <div>Direct Sales</div>
-                                        <h4>₹ 15,000</h4>
-                                    </Col>
-                                </Row>
-                            </Card>
+                  <div className='d-flex gap-5 baseline  border rounded mt-3 '>
+                  <a href="#" className='activate mb-0  p-3' style={{marginLeft:"20px"}}>Sales</a>
+                  <a href="#" className='mb-0 p-3'>Learners</a>
+                  <a href="#" className='mb-0 p-3'>Orders</a>
+                  <a href="#" className='mb-0 p-3'>Apps</a>
+                  </div>
 
-                            <Card className="p-3">
-                                <h5>Monthly Sales</h5>
-                                <Bar data={salesData} options={options} />
-                            </Card>
-                        </Col>
+                  <div className=' mt-3 rounded  border'>
+                    <h5 className='p-3 fw-bold'>Sales(12 Months)</h5>
 
-                        <Col md={5}>
-                            <Card className="mb-3 p-3">
-                                <Card.Body>
-                                    <h5>Pending Tasks</h5>
-                                    <ListGroup variant="flush">
-                                        <ListGroup.Item className="d-flex justify-content-between align-items-center">
-                                            <div className="d-flex align-items-center">
-                                                <BsHeadset className="me-2" />
-                                                <span>Support Tickets</span>
-                                            </div>
-                                            <div>No Pending Task</div>
-                                        </ListGroup.Item>
+                  <div className='d-flex justify-content-around '>
+                  <div className=" ">
+                  <p>Total Products</p>
+                  <h5>&#8377;  27,447</h5>
+                  </div>
 
-                                        <ListGroup.Item className="d-flex justify-content-between align-items-center">
-                                            <div className="d-flex align-items-center">
-                                                <BsChatDots className="me-2" />
-                                                <span>Unanswered Discussions</span>
-                                            </div>
-                                            <div>No Pending Task</div>
-                                        </ListGroup.Item>
+                  <div className="">
+                  <p>Online Sales</p>
+                  <h5>&#8377;  12,447</h5>
+                  </div>
 
-                                        <ListGroup.Item className="d-flex justify-content-between align-items-center">
-                                            <div className="d-flex align-items-center">
-                                                <BsStar className="me-2" />
-                                                <span>Ratings & Reviews</span>
-                                            </div>
-                                            <div>No Pending Task</div>
-                                        </ListGroup.Item>
-                                    </ListGroup>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                  <div className="">
+                  <p>Direct Sales</p>
+                  <h5>&#8377;  15,000</h5>
+                  </div>
+                  </div>
+                  </div>
+
+                  <div className='infographic mt-3 ' >
+                    <div className=' border media rounded p-2' >
+                        <h5 className='fw-bold p-3'> Monthly Sales</h5>
+
+                        <p className=' fw-semibold ps-3 pt-0'>- (For Sep 2024)</p>
+                        <p className='p-3 py-0'> <i class="fa-solid fa-left-right bg-light p-2 rounded "></i> in selected time</p>
+                        <div className='d-flex gap-1'>
+                            <p className='p-3 pt-0'><i class="fa-solid fa-square-full " style={{color:"#563D7C"}}></i> Online Sales</p>
+                            <p className='p-3 pt-0'> <i class="fa-solid fa-square-full text-warning "></i> Direct Sales</p>
+                        </div>
+
+
+                        <div className=''  style={{borderBottom:"1px solid gray" , paddingLeft:"20px"}}>
+                            <p className='mb-0  '>30k</p>
+
+                        </div>
+                        <br />
+
+                        <div className=''  style={{borderBottom:"1px solid gray" , paddingLeft:"20px"}}>
+                            <p className='mb-0 '>25k</p>
+
+                        </div>
+                        <br />
+
+                        <div className=''  style={{borderBottom:"1px solid gray" , paddingLeft:"20px"}}>
+                            <p className='mb-0 '>20k</p>
+
+                        </div>
+                        <br />
+
+                        <div className=''  style={{borderBottom:"1px solid gray" , paddingLeft:"20px"}}>
+                            <p className='mb-0 '>15k</p>
+
+                        </div>
+
+                        <br />
+
+                       <div className=''  style={{borderBottom:"1px solid gray" , paddingLeft:"20px"}}>
+                           <p className='mb-0 '>10k</p>
+
+                       </div>
+
+                       <br />
+
+                       <div className=''  style={{borderBottom:"1px solid gray" , paddingLeft:"20px"}}>
+                           <p className='mb-0 '>5k</p>
+
+                       </div>
+
+                       <br />
+
+                       <div className=''  style={{borderBottom:"1px solid gray" , paddingLeft:"20px"}}>
+                           <p className='mb-0 '>0</p>
+
+                       </div>
+
+                       <div className='text-center'>
+                  <p className='fw-semibold'>Sep  24 <br /> Timeline</p>
+
+                  </div>
+                  <div className='main' >
+                      <div className='scoda' >
+
+                      </div>
+                      <div className='virtus'>
+
+                      </div>
+                      </div>
+
+
+                    </div>
+
+
+
+
+
+                  </div>
+
+
+                </div>
+                <div className="col-12 col-lg-4 cursor ">
+                  <div className=' border rounded p-3 for-hover '>
+
+                    <p className='ps-2'>Schedualed Events <span className='bg-warning fs-6  d-inline-block  text-center  rounded-5 text-white '  style={{width:"25px" ,height:"25px"}}> 1</span></p>
+
+
+                    <div  className='d-flex '>
+
+                    <i class="fa-solid fa-l text-center p-2 fs-6 bg-secondary text-white rounded-5 mt-2 " style={{width:"40px" ,height:"40px"}}></i>
+                      <div>
+                    <h5 className=''>Live lesson 1</h5>
+                    <p>07-Oct-2024 - 8:00 PM</p>
+                    </div>
+
+
+                    </div>
+                  </div>
+                  <div className=' border rounded mt-3 p-3 for-hover '>
+
+                    <p className='ps-2'>Pendding Tasks</p>
+                    <div  className='d-flex'>
+                    <i class="fa-solid fa-headphones text-center p-2 fs-6  pt-2 bg-light rounded-5 mt-2" style={{width:"40px" ,height:"40px"}}
+                      ></i>
+                      <div>
+                    <h5>Support Tickets</h5>
+                    <p>No Pending Task</p>
+                    </div>
+
+
+                    </div>
+
+
+
+                    </div>
+
+                    <div className=' border rounded mt-1 p-3 d-flex for-hover  '>
+
+                    <i class="fa-regular fa-message text-center fs-6 p-2 pt-2 mt-2 bg-light rounded-5" style={{width:"40px" ,height:"40px"}}></i>
+
+                    <div>
+                    <h5>Unanswered Discussions</h5>
+                    <p>No Pending Task</p>
+                    </div>
+
+
+                    </div>
+
+                     <div className=' border rounded mt-1 p-3 d-flex for-hover '>
+
+
+                     <i class="fa-solid fa-star text-center mt-2 pt-2 fs-6 p-2 bg-light rounded-5"  style={{width:"40px" ,height:"40px"}}></i>
+
+                    <div>
+                    <h5>Ratings & Reviews</h5>
+                    <p>No Pending Task</p>
+                    </div>
+
+                    </div>
+
+
+
+                </div>
+              </div>
+
+            </div>
         </div>
     );
 }

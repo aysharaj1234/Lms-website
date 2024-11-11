@@ -1,196 +1,241 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, NavDropdown } from 'react-bootstrap';
-import { FaHome, FaBars, FaBook, FaClipboardList, FaChartLine } from 'react-icons/fa';
-import { FiUsers, FiFileText, FiSettings, FiBox } from 'react-icons/fi';
 import { Link, NavLink } from 'react-router-dom';
 
+const Sidebar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isDropdownOpen1, setIsDropdownOpen1] = useState(false);
+  const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
+  const [isDropdownOpen3, setIsDropdownOpen3] = useState(false);
+  const [isDropdownOpen4, setIsDropdownOpen4] = useState(false);
+  const [isDropdownOpen5, setIsDropdownOpen5] = useState(false);
+  const [isDropdownOpen6, setIsDropdownOpen6] = useState(false);
+  const [isDropdownOpen7, setIsDropdownOpen7] = useState(false);
+  const [isDropdownOpen8, setIsDropdownOpen8] = useState(false);
 
-function Sidebar() {
-  const [isCollapsed, setIsCollapsed] = useState(false);
-
-  const toggleSidebar = () => {
-    setIsCollapsed(!isCollapsed);
+  // Toggle dropdown visibility
+  const handleDropdownClick = () => {
+    setIsDropdownOpen(!isDropdownOpen);
   };
 
+  
+  const handleDropdownClick1 = () => {
+    setIsDropdownOpen1(!isDropdownOpen1);
+  };
+
+  const handleDropdownClick2 = () => {
+    setIsDropdownOpen2(!isDropdownOpen2);
+  };
+
+
+  const handleDropdownClick3 = () => {
+    setIsDropdownOpen3(!isDropdownOpen3);
+  };
+
+  const handleDropdownClick4 = () => {
+    setIsDropdownOpen4(!isDropdownOpen4);
+  };
+
+  const handleDropdownClick5 = () => {
+    setIsDropdownOpen5(!isDropdownOpen5);
+  };
+
+  const handleDropdownClick6 = () => {
+    setIsDropdownOpen6(!isDropdownOpen6);
+  };
+
+
+  const handleDropdownClick7 = () => {
+    setIsDropdownOpen7(!isDropdownOpen7);
+  };
+
+
+  const handleDropdownClick8 = () => {
+    setIsDropdownOpen8(!isDropdownOpen8);
+  };
+
+
   return (
-
-   
     <div>
-     
-      
 
-    <div style={{width: "300px",}}>
-    <div className={`sidebar d-flex flex-column bg-light p-3 ${isCollapsed ? 'collapsed' : ''}`}>
-      <div className="sidebar-header d-flex justify-content-between align-items-center">
-        <FaBars className="toggle-btn" onClick={toggleSidebar} />
-        {!isCollapsed && <h4>My App</h4>}
-      </div>
-      
-      <Nav className="flex-column">
-        <Nav.Link className="nav-item">
-          <FaHome className="nav-icon" /> {!isCollapsed && <NavLink to='/'>Dashboard</NavLink> }
-        </Nav.Link>
-
-
-        <NavDropdown
-          title={
-            <span>
-              <FaBook className="nav-icon" /> {!isCollapsed && 'Contents'}
-            </span>
-          }
-          id="nav-dropdown"
-        >
-          <NavDropdown.Item href="#course1"><NavLink className="text-decoration-none" to="/Courses">Courses</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href='#course1'><NavLink className="text-decoration-none" to="/LiveClasses">LiveClasses</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course3"><NavLink className="text-decoration-none" to="/MockTest">MockTest</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course4"> <NavLink className="text-decoration-none" to="/TestSeries">TestSeries</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course5"> <NavLink className="text-decoration-none" to="/Bundles">Bundles</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course6"><NavLink className="text-decoration-none" to="/Batch">Batch</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course7"><NavLink className="text-decoration-none" to="/Ebook">Ebook</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course8"><NavLink  className="text-decoration-none"to="/Podcasts">Podcasts</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course8"><NavLink  className="text-decoration-none"to="/Webinars">Webinars</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course8"><NavLink  className="text-decoration-none"to="/DigitalProducts">DigitalProducts</NavLink></NavDropdown.Item>
-        </NavDropdown>
-
-
-        <Nav.Link as={NavLink} to="/marketing" className="nav-item">
-          <FaChartLine className="nav-icon" /> {!isCollapsed && 'Marketing'}
-        </Nav.Link>
-
-       
-
-
-
-        <NavDropdown
-          title={
-            <span>
-              <FaBook className="nav-icon" /> {!isCollapsed && 'Websites & Apps'}
-            </span>
-          }
-          id="nav-dropdown"
-        >
-          <NavDropdown.Item href="#course1"><NavLink className="text-decoration-none" to="/Website">Website</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href='#course1'><NavLink className="text-decoration-none" to="/NavigationMenu">NavigationMenu</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course3"><NavLink className="text-decoration-none" to="/MobileApp">MobileApp</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course4"> <NavLink className="text-decoration-none" to="/Branding">Branding</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course5"> <NavLink className="text-decoration-none" to="/Embeddable">Embeddable</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course6"><NavLink className="text-decoration-none" to="/Language">Language</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course7"><NavLink className="text-decoration-none" to="/SignUp">SignUp</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course8"><NavLink  className="text-decoration-none"to="/CustomField">CustomFields</NavLink></NavDropdown.Item>
-        </NavDropdown>
-
-
-        <Nav.Link as={NavLink} to="/marketing" className="nav-item">
-          <FaChartLine className="nav-icon" /> {!isCollapsed && 'Marketing'}
-        </Nav.Link>
-       
-
-<NavDropdown
-          title={
-            <span>
-              <FaBook className="nav-icon"/> {!isCollapsed && 'Users'}
-            </span>
-          }
-          id="nav-dropdown"
-        >
-         <NavDropdown.Item href="#course1"><NavLink  className="text-decoration-none" to="/Groups">Groups</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course2"><NavLink className="text-decoration-none" to="/Learners">Learners</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course3"><NavLink className="text-decoration-none" to="/Contacts">Contacts</NavLink></NavDropdown.Item>
-
-        </NavDropdown>
-
-
-
-
-        <NavDropdown
-          title={
-            <span>
-              <FaBook className="nav-icon"/> {!isCollapsed && 'Reports'}
-            </span>
-          }
-          id="nav-dropdown"
-        >
-         <NavDropdown.Item href="#course1"><NavLink  className="text-decoration-none" to="/Enrollments">Enrollments</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course2"><NavLink  className="text-decoration-none" to="/Transactions">Transactions</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course3"><NavLink  className="text-decoration-none" to="/PaymentGateways">PaymentGateways</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course4"><NavLink  className="text-decoration-none" to="/ProgressScore">ProgressScore</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course5"><NavLink  className="text-decoration-none" to="/SalesMarketing">SalesMarketing</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course6"><NavLink  className="text-decoration-none" to="/LiveClassLagacy">LiveClassLagacy</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course7"><NavLink  className="text-decoration-none" to="/LiveClassInsights">LiveClassInsights</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course8"><NavLink  className="text-decoration-none" to="/CustomFields">CustomFields</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course9"><NavLink  className="text-decoration-none" to="/DigitalEvaluation">DigitalEvaluation</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course10"><NavLink  className="text-decoration-none" to="/Exports">Exports</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course11"><NavLink  className="text-decoration-none" to="/BroadCastMessage">BroadCastMessage</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course12"><NavLink  className="text-decoration-none" to="/MessengerInsights">MessengerInsights</NavLink></NavDropdown.Item>
-         <NavDropdown.Item href="#course13"><NavLink  className="text-decoration-none" to="/LegacyReport">LegacyReport</NavLink></NavDropdown.Item>
-
-        </NavDropdown>
-
-
-
-        <NavDropdown
-          title={
-            <span>
-              <FaBook className="nav-icon" /> {!isCollapsed && 'Manage'}
-            </span>
-          }
-          id="nav-dropdown"
-        >
-          <NavDropdown.Item href="#course1"><NavLink className="text-decoration-none" to="/CourseEncryption">CourseEncryption</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course2"><NavLink className="text-decoration-none" to="/Discussions">Discussions</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course2"><NavLink  className="text-decoration-none" to="/RatingReview">RatingReview</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course2"><NavLink  className="text-decoration-none" to="/LegacyAnswerReview">LegacyAnswerReview</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course2"><NavLink  className="text-decoration-none" to="/AnswerReview">AnswerReview</NavLink></NavDropdown.Item>
-          <NavDropdown.Item href="#course2"><NavLink  className="text-decoration-none" to="/LearnerSupport">LearnerSupport</NavLink></NavDropdown.Item>
         
-        </NavDropdown>
+<div className="sidenav border" style={{backgroundColor:"white"}}>
+<Link to={'/'}><i class="fa-solid fa-house"></i><span className='ms-2'>Dashboard</span></Link>
 
+      {/* contents folder */}
+        <button className="dropdown-btn" onClick={handleDropdownClick}><i class="fa-solid fa-book-bookmark"></i>
+        <span className='ms-2'> Contents</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
 
-       
-       
-
-        <NavDropdown
-          title={
-            <span>
-              <FaBook className="nav-icon" /> {!isCollapsed && 'AddOne'}
-            </span>
-          }
-          id="nav-dropdown"
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen ? 'block' : 'none' }}
         >
-          <NavDropdown.Item href="#course1"><NavLink className="text-decoration-none"  to="/AddOne">AddOne</NavLink></NavDropdown.Item>
-        </NavDropdown>
+             <a href="courses">Courses</a>
+          <a href="liveclasses">LiveClasses</a>
+          <a href="mocktest">MockTest</a>
+          <a href="testseries">TestSeries</a>
+          <a href="bundles">Bundles</a>
+          <a href="batch">Batch</a>
+          <a href="ebook">Ebook</a>
+          <a href="podcasts">Podcasts</a>
+          <a href="webinars">Webinars</a>
+          <a href="freeresource">FreeResource</a>
+          <a href="telegram">Telegram</a>
+          <a href="lagacyquestion">LagacyQuestionPool</a>
+          <a href="questionpool">QuestionPool</a>
+          <a href="subscription">Subscription</a>
+          <a href="newsfeed">Newsfeed</a>
+          <a href="communties">Communties</a>
+          <a href="categories">Categories</a>
+          <a href="segments">Segments</a>
+          <a href="tags">Tags</a>
+        </div>
 
 
-        <NavDropdown
-          title={
-            <span>
-              <FaBook className="nav-icon" /> {!isCollapsed && 'PriacyMonitor'}
-            </span>
-          }
-          id="nav-dropdown"
+{/* website folder */}
+        <button className="dropdown-btn" onClick={handleDropdownClick1}> <i class="fa-solid fa-globe"></i>
+        <span className='ms-2'>Website & Apps</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen1 ? 'block' : 'none' }}
         >
-          <NavDropdown.Item href="#course1"><NavLink className="text-decoration-none"  to="/PriacyMonitor">PriacyMonitor</NavLink></NavDropdown.Item>
-        </NavDropdown>
+          <a href="website">Website</a>
+          <a href="navigationmenu">NavigationMenu</a>
+          <a href="mobileapp">MobileApp</a>
+          <a href="branding">Branding</a>
+          <a href="embeddable">Embeddable</a>
+          <a href="language">Language</a> 
+          <a href="signup">SignUp</a>
+          <a href="customfields">CustomFields</a>
 
-        <NavDropdown
-          title={
-            <span>
-              <FaBook className="nav-icon" /> {!isCollapsed && 'Settings'}
-            </span>
-          }
-          id="nav-dropdown"
+        </div>
+
+
+  
+        {/* users folder */}
+        <button className="dropdown-btn" onClick={handleDropdownClick2}> <i class="fa-solid fa-user"></i>
+        <span className='ms-2'>Users</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen2 ? 'block' : 'none' }}
         >
-          <NavDropdown.Item href="#course1"><NavLink className="text-decoration-none"  to="/Settings">Settings</NavLink></NavDropdown.Item>
-        </NavDropdown>
+          <a href="groups">Groups</a>
+          <a href="learners">Learners</a>
+          <a href="contacts">Contacts</a>
+
+        </div>
 
 
-      </Nav>
-    </div>
-    </div>
+
+              {/* marketing */}
+
+              <button className="dropdown-btn" onClick={handleDropdownClick3}> <i class="fa-solid fa-chart-simple"></i>
+              <span className='ms-2'>Marketing</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen3 ? 'block' : 'none' }}
+        >
+        </div>
+
+
+        {/* Reports */}
+        <button className="dropdown-btn" onClick={handleDropdownClick4}> <i class="fa-solid fa-book"></i>
+        <span className='ms-1'>Reports</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen4 ? 'block' : 'none' }}
+        >
+            <a href="enrollments">Enrollments</a>
+          <a href="transactions">Transactions</a>
+          <a href="paymentgateways">PaymentGateways</a>
+          <a href="progressscore">ProgressScore</a>
+          <a href="salesmarketing">SalesMarketing</a>
+          <a href="liveclasslagacy">LiveClassLagacy</a> 
+          <a href="liveclassinsights">LiveClassInsights</a>
+          <a href="customfields">CustomFields</a>
+          <a href="digitalevaluation">DigitalEvaluation</a> 
+          <a href="exports">Exports</a>
+          <a href="broadcastmessage">BroadCastMessage</a>
+          <a href="messengerinsights">MessengerInsights</a>
+          <a href="legacyreport">LegacyReport</a>
+          <a href="resource">Resource</a>
+        </div>
+
+
+        {/* manage */}
+        <button className="dropdown-btn" onClick={handleDropdownClick5}> <i class="fa-solid fa-people-roof"></i>
+        <span className='ms-2'>Manage</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen5 ? 'block' : 'none' }}
+        >
+          <a href="courseencryption">CourseEncryption</a>
+          <a href="discussions">Discussions</a>
+          <a href="ratingreview">RatingReview</a>
+          <a href="legacyanswerreview">LegacyAnswerReview</a>
+          <a href="answerreview">AnswerReview</a>
+          <a href="learnersupport">LearnerSupport</a> 
+        </div>
+
+
+{/* AddOne */}
+
+<button className="dropdown-btn" onClick={handleDropdownClick6}> <i class="fa-solid fa-file-circle-plus"></i>
+<span className='ms-2'>AddOne</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen6 ? 'block' : 'none' }}
+        >
+         <a href="addone">AddOne</a>
+          
+        </div>
+
+        {/* PriacyMonitor */}
+
+        <button className="dropdown-btn" onClick={handleDropdownClick7}> <i class="fa-solid fa-tv"></i>
+        <span className='ms-2'>PriacyMonitor</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen7 ? 'block' : 'none' }}
+        >
+          <a href="priacymonitor">PriacyMonitor</a>
+          
+        </div>
+
+        {/* Settings */}
+        <button className="dropdown-btn" onClick={handleDropdownClick8}> <i class="fa-solid fa-gear"></i>
+        <span className='ms-2'>Settings</span>
+          <i className="fa fa-caret-down"></i>
+        </button>
+        <div
+          className="dropdown-container"
+          style={{ display: isDropdownOpen8 ? 'block' : 'none' }}
+        >
+          <a href="settings">Settings</a>
+          
+        </div>
+
+
+
+      </div>
     </div>
   );
-}
+};
 
 export default Sidebar;

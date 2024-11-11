@@ -17,7 +17,7 @@ const Discussions = () => {
 <p className="fw-bold">View and manage learner discussions</p>
 <ul className="nav nav-underline">
   <li className="nav-item">
-    <a className="nav-link active" aria-current="page" href="#">products</a>
+    <a className="nav-link" aria-current="page" href="#">products</a>
   </li>
   <li className="nav-item">
     <a className="nav-link"  href="#">NewsFeeds</a>
@@ -53,9 +53,12 @@ const Discussions = () => {
 </div>
         </div>
       
-      <div classNameName='containere mt-5' style={{width:"auto", height:"8rem", backgroundColor:"lightblue",}}> </div>
-        <h5 classNameName='text-center mt-5'>No Results Found</h5>
-
+        {/* Placeholder for content */}
+        <div
+          className="container mt-5"
+          style={{ width: '100%', height: '8rem', backgroundColor: 'lightblue' }}
+        ></div>
+        <h5 className="text-center mt-5">No Results Found</h5>
      
 
        </div>

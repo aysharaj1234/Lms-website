@@ -13,8 +13,18 @@ import BatchesIns from './Components/Contents/BatchesIns';
 import Ebook from './Components/Contents/Ebook';
 import Podcasts from './Components/Contents/Podcasts';
 import Webinars from './Components/Contents/Webinars';
-
-
+import DigitalProducts from './Components/Contents/DigitalProducts';
+import FreeResource from './Components/Contents/FreeResource';
+import Telegram from './Components/Contents/Telegram';
+import Utilities from './Components/Contents/Utilities';
+import LagacyQuestionPool from './Components/Contents/LagacyQuestionPool';
+import QuestionPool from './Components/Contents/QuestionPool';
+import Subscription from './Components/Contents/Subscription';
+import Newsfeed from './Components/Contents/Newsfeed';
+import Communties from './Components/Contents/Communties';
+import Categories from './Components/Contents/Categories';
+import Segments from './Components/Contents/Segments';
+import Tags from './Components/Contents/Tags';
 import './Style.css';
 
 // rashmi code
@@ -26,7 +36,6 @@ import Embeddable from './Components/WebsiteApp/Embeddable';
 import Language from './Components/WebsiteApp/Language';
 import SignUp from './Components/WebsiteApp/SignUp';
 import CustomField from './Components/WebsiteApp/CustomField';
-// import Sidebar from './Components/Sidebar';
 import Groups from './Components/Users/Groups';
 import Contacts from './Components/Users/Contacts';
 import Learners from './Components/Users/Learners';
@@ -53,17 +62,20 @@ import Exports from './Components/Reports/Exports';
 import BroadCastMessage from './Components/Reports/BroadCastMessage';
 import MessengerInsights from './Components/Reports/MessengerInsights';
 import LegacyReport from './Components/Reports/LegacyReport';
+import Resource from './Components/Reports/Resource';
+import Demo1 from './Components/Demo/Demo1';
+
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <BrowserRouter>
         <Routes>
           {/* Home Route */}
           <Route path="/" element={<Dashboard />} />
 
-          {/* General Routes */}
+          General Routes
           <Route path='/courses' element={<Courses/>} />
           <Route path="/liveclasses" element={<LiveClasses/>} />
           <Route path="/mocktest" element={<MockTest />} />
@@ -73,6 +85,18 @@ function App() {
           <Route path="/ebook" element={<Ebook />} />
           <Route path="/podcasts" element={<Podcasts />} />
           <Route path="/webinars" element={<Webinars />} />
+          <Route path="/DigitalProducts" element={<DigitalProducts/>} />
+          <Route path="/FreeResource" element={<FreeResource/>} />
+          <Route path="/Telegram" element={<Telegram/>} />
+          <Route path="/Utilities" element={<Utilities/>} />
+          <Route path="/LagacyQuestionPool" element={<LagacyQuestionPool/>} />
+          <Route path="/QuestionPool" element={<QuestionPool/>} />
+          <Route path="/Subscription" element={<Subscription/>} />
+          <Route path="/Newsfeed" element={<Newsfeed/>} />
+          <Route path="/Communties" element={<Communties/>} />
+          <Route path="/Categories" element={<Categories/>} />
+          <Route path="/Segments" element={<Segments/>} />
+          <Route path="/Tags" element={<Tags/>} />
          
           
           {/* Rashmi's Routes */}
@@ -89,8 +113,8 @@ function App() {
           <Route path="/Groups" element={<Groups />} />
           <Route path="/Contacts" element={<Contacts />} />
           <Route path="/Learners" element={<Learners />} />
-
-          {/* Manage Routes */}
+{/* 
+          Manage Routes */}
           <Route path="/CourseEncryption" element={<CourseEncryption />} />
           <Route path="/Discussions" element={<Discussions />} />
           <Route path="/RatingReview" element={<RatingReview />} />
@@ -115,13 +139,13 @@ function App() {
           <Route path="/Exports" element={<Exports />} />
           <Route path="/BroadCastMessage" element={<BroadCastMessage />} />
           <Route path="/MessengerInsights" element={<MessengerInsights />} />
-          <Route path="/LegacyReport" element={<LegacyReport />} />
-
-          
-
-
-        </Routes>
+          <Route path="/LegacyReport" element={<LegacyReport/>} />
+          <Route path="/Resource" element={<Resource/>} />
+        </Routes> 
+        
       </BrowserRouter>
+
+  {/* <Demo1/> */}
     </div>
   );
 }

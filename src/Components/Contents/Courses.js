@@ -99,7 +99,7 @@ Create
   </div>
 
 
-  <iframe style={{marginTop:"3rem"}} width="640" height="360" src="https://www.youtube.com/embed/t2_Q2BRzeEE?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0" title="Python Full Course❤️ | Variables &amp; Data Types | Lecture 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe style={{marginTop:"3rem", marginLeft:"1rem"}} width="640" height="360" src="https://www.youtube.com/embed/t2_Q2BRzeEE?list=PLGjplNEQ1it8-0CmoljS5yeV-GlKSUEt0" title="Python Full Course❤️ | Variables &amp; Data Types | Lecture 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   )

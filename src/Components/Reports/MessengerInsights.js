@@ -20,7 +20,7 @@ const MessengerInsights = () => {
                   <li className="breadcrumb-item">
                     <a href="#">Dashboard</a>
                   </li>
-                  <li className="breadcrumb-item active " aria-current="page">
+                  <li className="breadcrumb-item" aria-current="page">
                     Messenger Insights
                   </li>
                 </ol>

@@ -1,15 +1,68 @@
 /* Dashboard.css */
 .shadow-sm {
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
-  }
-  
-  .text-muted {
-    font-size: 0.85rem;
-    color: #6c757d;
-  }
-  
-  h4 {
-    font-weight: bold;
-  }
-  
-  
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.text-muted {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.baseline a {
+  text-decoration: none;
+  color: rgb(15, 15, 15);
+}
+
+.activate{
+  border-bottom: 3px solid green;
+}
+
+.baseline a:hover{
+  border-bottom: 3px solid green;
+  color:rgb(68, 68, 68) ;
+}
+
+.cursor{
+cursor: pointer;
+}
+
+.for-hover:hover{
+background: rgb(242, 242, 243);
+}
+
+.media{
+width: 100%;
+ position: relative;
+}
+.main{
+width: 100%;
+/* display: flex;
+flex-direction: column; */
+
+
+}
+.scoda{
+ width: 20rem;
+height: 9rem;
+position: absolute;
+top: 64.3%;
+left: 50%;
+background-color: rgba(255, 174, 0, 0.725);
+transform: translate(-50%, 0%);
+
+}
+.virtus{
+width: 20rem;
+height: 7rem;
+position: absolute;
+top: 45.8%;
+left: 50%;
+background-color: #563d7cbe;
+transform: translate(-50%, 0%);
+
+
+}

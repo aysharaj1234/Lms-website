@@ -15,7 +15,7 @@ const ProgressScore = () => {
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
-                  <li className="breadcrumb-item active" aria-current="page">Progress & Score Reports</li>
+                  <li className="breadcrumb-item" aria-current="page">Progress & Score Reports</li>
                 </ol>
               </nav>
               <h4 className='ms-5'>Progress & Score Reports</h4>

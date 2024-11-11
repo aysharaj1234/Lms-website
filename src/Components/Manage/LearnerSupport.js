@@ -14,7 +14,7 @@ const LearnerSupport = () => {
             <div className='col-lg-6 col-md-6 col-sm-6'>
             <ul class="nav nav-underline ms-3">
   <li className="nav-item">
-    <a className="nav-link active" aria-current="page" href="#">Dashboard</a>
+    <a className="nav-link" aria-current="page" href="#">Dashboard</a>
   </li>
   <li className="nav-item">
     <a className="nav-link" href="#">LearnerSupport</a>

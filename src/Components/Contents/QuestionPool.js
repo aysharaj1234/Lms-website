@@ -1,20 +1,20 @@
-
 import React from 'react';
 import Sidebar from '../Sidebar';
 import Header from './Header';
 
-const Webinars = () => {
+
+const QuestionPool = () => {
   return (
     <div>
-        <Sidebar />
+         <Sidebar />
         <Header />
       {/* section-19 */}
       <div className="section-19">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 mt-5">
-              <h3>Webinars</h3>
-              <p>Welcome to your webinar dashboard</p>
+              <h3>Question Pool</h3>
+              <p>Create and manage question pool</p>
               <div className="d-flex flex-column flex-md-row align-items-md-center">
                 <input
                   type="text"
@@ -29,47 +29,18 @@ const Webinars = () => {
                 >
                   Search
                 </button>
-                <button
-                  className="btn btn-outline-primary mt-3 mt-md-0 ms-md-3"
-                  type="button"
-                >
-                  Add Filter
-                </button>
+               
               </div>
              
             </div>
 
             <div className="col-lg-6 col-md-6 col-sm-12 mt-5 ">
               <div className="btn-group  custom-margin">
-                <button
-                  className="btn btn-secondary btn-sm dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                Reorder
-                </button>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
+             
               </div>
               <div className='bts responsive-margin'>
               <button className="btn btn-primary btn-sm responsive-btn">
-   Create
+   + Create
 </button>
               </div>
 
@@ -97,6 +68,7 @@ const Webinars = () => {
                   type="button"
                 >
                 Filter By Published Date
+                
                 </button>
                 </div>
                 </div>
@@ -110,23 +82,4 @@ const Webinars = () => {
   )
 }
 
-export default Webinars;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default QuestionPool;

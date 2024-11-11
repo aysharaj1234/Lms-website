@@ -16,7 +16,7 @@ const AnswerReview = () => {
 <p className="fw-bold">View and manage answer review for products</p>
 <ul className="nav nav-underline">
   <li className="nav-item">
-    <a className="nav-link active" aria-current="page" href="#">Offline Answer Reviews</a>
+    <a className="nav-link" aria-current="page" href="#">Offline Answer Reviews</a>
   </li>
   <li className="nav-item">
     <a className="nav-link"  href="#">Online Answer Reviews</a>

@@ -1,12 +1,21 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
+
 
 const CustomField = () => {
+  const navigate= useNavigate()
+  const dashboard=()=>
+  {
+    navigate('/')
+  }
+
   return (
     <div>
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg bg-body-tertiary" style={{ width: '100%' }}>
         <div className="container-fluid">
-          <i className="fa-solid fa-backward ms-1"></i>
+        <i className="fa-solid fa-backward ms-1" onClick={dashboard} style={{cursor:"pointer"}}></i>
           <button
             className="navbar-toggler"
             type="button"

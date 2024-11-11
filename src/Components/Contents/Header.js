@@ -15,9 +15,10 @@ const Header = () => {
       </ul>
       <form className ="d-flex me-5" role="search">
         <input className ="form-control me-2" type="search" placeholder="View As Learner" aria-label="Search"/>
-        <button className ="btn btn-outline-success" type="submit">Help</button> <i class="fa-solid fa-bell ms-3 mt-2"></i>
-        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRY87Y7n6bmao_l8L86v5q_eThxPttUeecBQ&s' style={{width:"30px", height:"30px", marginLeft:"10px"}}/>
-      </form>
+        <button className ="btn btn-outline-success" type="submit">Help</button> <i  class="fa-solid fa-bell fs-4 ms-3 mt-2"></i>
+        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRY87Y7n6bmao_l8L86v5q_eThxPttUeecBQ&s' style={{width:"30px", height:"30px", marginLeft:"1rem",mixBlendMode:"multiply" ,cursor:"pointer"}}
+        />
+        </form>
     </div>
   </div>
 </nav>
