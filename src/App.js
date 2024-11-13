@@ -1,6 +1,7 @@
 import './App.css';
 import Batch from './Components/Contents/Batch';
 import Courses from './Components/Contents/Courses';
+import Selenium from './Components/Contents/Selenium';
 import LiveClasses from './Components/Contents/LiveClasses';
 import MockTest from './Components/Contents/MockTest';
 import Dashboard from './Components/Dashboard/Dashboard';
@@ -77,6 +78,7 @@ function App() {
 
           General Routes
           <Route path='/courses' element={<Courses/>} />
+          <Route path='/Selenium' element={<Selenium/>} />
           <Route path="/liveclasses" element={<LiveClasses/>} />
           <Route path="/mocktest" element={<MockTest />} />
           <Route path="/batch" element={<Batch />} />

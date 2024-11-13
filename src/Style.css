@@ -1603,6 +1603,25 @@ font-weight: 600;
     margin-top: 2rem;
     background-color: white;
   }
+
+  .responsive-create-btn {
+    margin-top: -2.4rem;
+    width: auto;
+  }
+  .responsive-filter-btn {
+    margin-top: 2rem;
+    width: 100%;
+  } 
+  .responsive-filter-btn {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .responsive-dropdown {
+    margin-left: -8rem !important;
+    margin-top: 4rem !important;
+  }
+  
+
  
  
 
@@ -1790,12 +1809,27 @@ font-weight: 600;
     margin-left: 16rem;
     margin-top: 4rem;
     margin-right: auto;
+  }
+  #createButton {
+    width: 100%;
+    margin-right: 0;
+  }
+  .responsive-filter-btn {
+    margin-top: 3rem;
+    width: 100%;
+    font-size: 14px;
+  }
+  .responsive-dropdown {
+    margin-left: -1rem !important;
+    margin-top: 3rem !important;
+  }
 
    
-  }
-  
    }
-  
+
+
+
+
  /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) { 
     .section-10 {
@@ -1967,9 +2001,26 @@ font-weight: 600;
         margin-left: 16rem;
         margin-top: 4rem;
         margin-right: auto;
-       
-    
       }
+      #createButton {
+        width: auto;
+        margin-right: 1rem;
+      }
+      .responsive-create-btn {
+        margin-top: -1.5rem;
+        width: auto;
+        font-size: 16px;
+      }
+      .responsive-filter-btn {
+        margin-top: 4rem;
+        width: auto;
+        font-size: 16px;
+      }
+      .responsive-dropdown {
+        margin-left: -10rem !important;
+        margin-top: 3rem !important;
+      }
+     
    
     }
   
@@ -2165,8 +2216,32 @@ font-weight: 600;
         background-color: white;
 
       }
-   
+      #createButton {
+        width: auto;
+        margin-right: -15rem;
+      }
+      .responsive-create-btn {
+        margin-top: -2.4rem;
+        width: auto;
+        font-size: 18px;
+        margin-right: 2rem;
+      }
+      .responsive-filter-btn {
+        margin-top: 5rem;
+        width: auto;
+        font-size: 18px;
+        margin-right: 2rem;
+      }
+      .responsive-dropdown {
+        margin-left: -16rem !important;
+        margin-top: 5rem !important;
+      }
+       
+        
+      
   }
+
+  
   
   
   

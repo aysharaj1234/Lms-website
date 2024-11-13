@@ -51,7 +51,7 @@ const CourseEncryption = () => {
       </div>
 
       {/* Second Column with Dropdown */}
-      <div className="col-lg-6 col-md-12 mt-3 mt-lg-0">
+      <div className="col-lg-6 col-md-12 mt-lg-0">
         <div className="dropdown">
           <a
             className="btn btn-secondary dropdown-toggle"

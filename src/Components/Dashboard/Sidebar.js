@@ -74,6 +74,7 @@ const Sidebar = () => {
           style={{ display: isDropdownOpen ? 'block' : 'none' }}
         >
            <a href="courses">Courses</a>
+        
           <a href="liveclasses">LiveClasses</a>
           <a href="mocktest">MockTest</a>
           <a href="testseries">TestSeries</a>

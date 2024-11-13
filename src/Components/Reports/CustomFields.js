@@ -92,7 +92,7 @@ const CustomFields = () => {
 </div> 
 
 
-<div class="table-responsive">
+<div class="table-responsive mt-4">
   <table className="table table-bordered table-striped">
     <thead>
       <tr>
